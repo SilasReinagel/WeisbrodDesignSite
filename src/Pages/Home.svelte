@@ -1,16 +1,13 @@
 <script>
-  import Container from '../Elements/Container.svelte';
+  import Hero from '../Sections/Hero.svelte';
+  import Works from '../Sections/Works.svelte';
+  import ContactForm from '../Sections/ContactForm.svelte';
 
+  import company from '../static-content.js';
 </script>
 
-<Container>
-  <section>
-    <h1>Home</h1>
-  </section>
-</Container>
-
-<style>
-  section {
-    padding: 1em;
-  }
-</style>
+<div>
+  <Hero/>
+  <Works/>
+  <ContactForm company={company}/>
+</div>

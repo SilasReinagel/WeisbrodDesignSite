@@ -1,29 +1,25 @@
 import Home from './Pages/Home.svelte';
-import Contact from './Pages/Contact.svelte';
 
 const DefaultPage = Home;
 export const pages = [
-  { path: '/', href: '/', name: 'Home', component: DefaultPage, showInMainNav: true },
-  { path: '/contact', href: '/index.html?page=contact', name: 'Contact', component: Contact, showInMainNav: true },
+  { path: '/', href: '/', name: 'Home', component: DefaultPage, showInMainNav: false },
+  { path: '/contact', href: '#contact', name: 'Contact', component: DefaultPage, showInMainNav: true },
+  { path: '/works', href: '#works', name: 'Works', component: DefaultPage, showInMainNav: true },
 ]
 
 const address = (line1, city, state, zip5, mapLink) => ({ line1, city, state, zip5, mapLink, toString: () => `${line1}, ${city}, ${state}, ${zip5}`});
 const site = ({
-    name: 'Site Name',
-    owner: 'Site Owner',
-    slogan: 'We are great at business!',
-    email: 'aaa@abc.com',
+    name: 'Weisbrod Design',
+    owner: 'Weisbrod Design',
+    slogan: 'Lively and unique creative visaul design in many mediums.',
+    email: 'weisbrodcreative@gmail.com',
     logo: './images/logo.png',
     logoMobile: './images/logo.png',
-    address: address("123 Main Street", "City", "ST", "12345", ""),
-    contactPrompt: 'Send us a message',
+    address: address("", "", "", "", ""),
+    contactPrompt: "Let's Collaborate",
     social: {
-        // steam: '',
-        // twitter: '',
-        // itchio: '',
-        // reddit: ''
+        instagram: 'https://www.instagram.com/weisbroddesign/',
     }
   });
   
-
-  export default site;
+export default site;

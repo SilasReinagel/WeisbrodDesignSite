@@ -12,15 +12,14 @@
     <div class="logo-img">
       <img src={company.logo} alt="Logo"/>
     </div>
-    <h1>{company.name}</h1>
+    <!-- <h1>{company.name}</h1> -->
   </a>
   <SiteSidebar bind:open={sidebarOpen}/>
   <nav class="navbar tablet-hidden">
-    {#each pages as page}
+    {#each pages.filter(p => p.showInMainNav) as page}
       <a class="navlink decor-font" href={page.href}>{page.name}</a>
     {/each}
   </nav>
-  <HamburgerIcon bind:open={sidebarOpen}/>
 </header>
 
 <style>
@@ -31,7 +30,7 @@
     align-items: center;
     align-content: center;
     background-color: var(--header-background-color);
-    height: 82px;
+    height: 120px;
     padding: 0 16px;
   }
 
@@ -47,18 +46,27 @@
   }
 
   .logo-img {
-    width: 48px;
+    width: 160px;
   }
 
   .navlink {
     color: var(--header-color);
-    margin: 5px 15px;
-    font-size: 1.1em;
+    margin: 5px 32px;
+    font-size: 1.6em;
     line-height: 22px;
     font-weight: 700;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     transition-duration: 0.2s;
+
+    text-shadow:
+        -5px 6px 0 #000,
+        -5px 3px 0 #000,
+        -3px 6px 0 #000,
+        -2px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
   }
 
   .navlink:hover {

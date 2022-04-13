@@ -3,13 +3,14 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
 
 /* Site Theme */
 :root {
-  --primary-color: #121212;
+  --primary-color: #232323;
   --primary-color-light: #454545;
   --primary-color-hover: #454545;
+  --primary-color-press: #676767;
   --primary-background-color: #fff;
-  --secondary-color: #29C4F8;
-  --secondary-color-hover: #3CD2F9;
-  --secondary-color-press: #4AF3F8;
+  --secondary-color: #ff1aa0;
+  --secondary-color-hover: #e849a6;
+  --secondary-color-press: #771c51;
   --alternate-color:#00dce8;
   --alternate-background-color: #17111a;
   --alternate-color-light:#00dce8;
@@ -18,15 +19,18 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
   --footer-color: #fff;
   --footer-background-color: #121212;
   
-  --header-background-color: #121212;
+  --header-background-color: #019795;
   --header-color: #fff;
-  --header-color-hover: #3CD2F9;
-  --header-color-press: #4AF3F8;
+  --header-color-hover: #ff1aa0;
+  --header-color-press: #fdad0e;
+  --link-color: #00dce8;
+  --link-color-hover: #00dce8;
+  --link-color-active: #128b92;
 }
 
 @font-face {
   font-family: 'Header';
-  src: url('/fonts/OleoSCript-Bold.ttf')  format('truetype');
+  src: url('/fonts/Gecko Lunch.ttf')  format('truetype');
   font-display: swap;
 }
 
@@ -34,6 +38,17 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
   font-family: 'Body';
   src: url('/fonts/OpenSans-Regular.ttf')  format('truetype');
   font-display: swap;
+}
+
+@font-face {
+  font-family: 'HGTV';
+  src: url('/fonts/Gotham Ultra.otf')  format('truetype');
+  font-display: swap;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -49,6 +64,7 @@ html, body, a  {
   font-size: 18px;
   font-family: 'Body', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--primary-color);
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -60,10 +76,6 @@ h1, h2, h3, h4, h5, h6 {
 .decor-font {
   font-family: 'Header', 'Times New Roman', Times, serif;
   letter-spacing: 0.05em;
-}
-
-.bg-gradient {
-
 }
 
 /* End Site Theme */
@@ -122,15 +134,15 @@ a {
 
 a,
 a:visited {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 a:hover {
-  color: var(--secondary-color-hover);
+  color: var(--primary-color-hover);
 }
 
 a:active {
-  color: var(--secondary-color-press);
+  color: var(--primary-color-press);
 }
 
 img {

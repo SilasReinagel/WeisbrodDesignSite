@@ -12,14 +12,14 @@
 
     <SingleColorSocialLinks/>
 
-    <p class="small-text">App by: <a href="http://www.silasreinagel.com" class="small-text">Silas Reinagel</a></p>
+    <p class="small-text">Site by: <a href="http://www.silasreinagel.com" class="small-text">Silas Reinagel</a></p>
   </div>
 </footer>
 
 <style>
   footer {
     height: 5.4em;
-    background-color: var(--footer-background-color);
+    background-color: var(--header-background-color);
     color: var(--footer-color);
 
     margin: 0 auto;
@@ -29,7 +29,6 @@
 
   a {
     font-weight: 800;
-
     font-size: 1em;
   }
 

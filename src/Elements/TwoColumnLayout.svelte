@@ -19,7 +19,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 1.5em 0 8em 0;
+    margin: 0 0 0 0;
   }
 
   .column {
