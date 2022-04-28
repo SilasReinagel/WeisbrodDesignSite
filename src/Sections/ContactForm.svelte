@@ -21,11 +21,11 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    background-color: #f2bb85;
-    background-image:  url("/images/background-rectangle-sand.png");
+    /* background-color: #f2bb85;
+    background-image: url("/images/background-rectangle-sand.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top center;
+    background-position: top center; */
     padding-top: 5em;
     padding-bottom: 5em;
     min-height: 100vh;
@@ -39,35 +39,20 @@
   }
 
   h2 {
-    color: white;
+    font-family: 'Open Sans', sans-serif;
+    color: #343434;
     font-size: 2.4em;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
     margin-bottom: 1em;
-    text-shadow:
-        -5px 6px 0 #000,
-        -5px 3px 0 #000,
-        -3px 6px 0 #000,
-        -2px -2px 0 #000,  
-        2px -2px 0 #000,
-        -2px 2px 0 #000,
-        2px 2px 0 #000;
   }
 
   .button-text {
-    font-family: "Header";
-    color: white;
+    font-family: "Open Sans", sans-serif;
+    color: #343434;
     font-size: 1.6em;
     margin: 0;
-    text-shadow:
-        -5px 6px 0 #000,
-        -5px 3px 0 #000,
-        -3px 6px 0 #000,
-        -2px -2px 0 #000,  
-        2px -2px 0 #000,
-        -2px 2px 0 #000,
-        2px 2px 0 #000;
   }
 
   .email-form {
@@ -79,17 +64,17 @@
     padding: 1em;
     margin: 1em 0;
     border-radius: 10px;
-    border: #000 solid 3px; 
+    border: #343434 solid 3px; 
   }
 
   input:focus{
     outline: none;
     border: solid 3px;
-    border-color: var(--secondary-color);
+    border-color: var(--primary-color-light);
 }
 
   ::placeholder {
-    color: var(--secondary-color);
+    color: var(--primary-color-light);
     font-weight: 700;
     opacity: 0.6;
   }
@@ -100,16 +85,16 @@
     font-size: 1.2em;
     width: 50%;
     border-radius: 10px;
-    border: #000 solid 3px;
-    background-color: var(--secondary-color);
+    border: #343434 solid 3px;
+    background-color: #dedede;
   }
 
   button:hover {
-    background-color: var(--secondary-color-hover);
+    background-color: #bcbcbc;
   }
 
   button:active {
-    background-color: var(--secondary-color-press);
+    background-color: #898989;
   }
 
 
@@ -118,7 +103,7 @@
     margin: 1em 0;
     min-height: 12em;
     border-radius: 10px;
-    border: #000 solid 3px; 
+    border: #343434 solid 3px; 
   }
 
   textarea:focus {

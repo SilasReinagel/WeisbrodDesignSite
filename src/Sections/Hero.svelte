@@ -2,15 +2,15 @@
   import Container from '../Elements/Container.svelte';
 </script>
 
-<section>
+<section id="about">
   <Container>
     <div class="row">
       <div class="flex-column">
-        <h1 class="focal">Joshua Weisbrod</h1>
+        <!-- <h1 class="focal">Joshua Weisbrod</h1> -->
         <div class="img-box">
           <img src="/images/josh-w-background.png" alt="Josh Weisbrod"/>
         </div>
-        <h1 class="focal">Graphic Designer</h1>
+        <!-- <h1 class="focal">Graphic Designer</h1> -->
       </div>
       <div class="right">
         <h1 class="center-vh seen-on">As seen on</h1>
@@ -19,12 +19,13 @@
         </div>
       </div>
     </div>
+    <p class="about"><span class="super-bold">Josh Weisbrod</span> is an artist and designer<br> based out of Phoenix, Arizona.</p>
   </Container>
 </section>
 
 <style>
   section {
-    min-height: 92vh;
+    min-height: 100vh;
     padding: 16px;
     background-color: #019795;
   }
@@ -33,14 +34,6 @@
     color: white;
     font-size: 2.4em;
     margin: 0;
-    text-shadow:
-        -5px 6px 0 #000,
-        -5px 3px 0 #000,
-        -3px 6px 0 #000,
-        -2px -2px 0 #000,  
-        2px -2px 0 #000,
-        -2px 2px 0 #000,
-        2px 2px 0 #000;
   }
 
   .img-box {
@@ -96,5 +89,18 @@
     margin-top: 2em;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .about {
+    font-size: 2em;
+    color: black;
+    font-family: 'century-gothic', sans-serif;
+    text-align: center;
+    letter-spacing: -1px;
+    line-height: 1.4em;
+  }
+
+  .super-bold {
+    font-weight: 800;
   }
 </style>

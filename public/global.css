@@ -46,6 +46,12 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'century-gothic';
+  src: url('/fonts/CenturyGothic.ttf')  format('truetype');
+  font-display: swap;
+}
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -54,6 +60,10 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
 html {
   background-color: #fff;
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+/* 
+  background-image: url('/images/works-texture.png');
+  background-size: cover;
+  background-repeat: repeat-y; */
 
   background-position: top;
   background-repeat: repeat-y;

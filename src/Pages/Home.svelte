@@ -7,7 +7,7 @@
 </script>
 
 <div>
-  <Hero/>
   <Works/>
+  <Hero/>
   <ContactForm company={company}/>
 </div>

@@ -13,7 +13,7 @@
 </script>
 
 <section id="works">
-  <h2 class="center-vh">Works</h2>
+  <!-- <h2 class="center-vh">Works</h2> -->
   <Lazy height={skeletonHeight}>
     <div class="flex">
       {#each screenshots as image}
@@ -25,10 +25,10 @@
 
 <style>
   section {
-    background-color: #e0d8cd;
+    /* background-color: #e0d8cd;
     background-image: url('/images/works-texture.png');
     background-size: cover;
-    background-repeat: repeat-y;
+    background-repeat: repeat-y; */
     min-height: 100vh;
     padding: 4em 2em;
   }
@@ -57,13 +57,5 @@
     color: white;
     font-size: 2.4em;
     margin: 0 0 1em 0;
-    text-shadow:
-        -5px 6px 0 #000,
-        -5px 3px 0 #000,
-        -3px 6px 0 #000,
-        -2px -2px 0 #000,  
-        2px -2px 0 #000,
-        -2px 2px 0 #000,
-        2px 2px 0 #000;
   }
 </style>

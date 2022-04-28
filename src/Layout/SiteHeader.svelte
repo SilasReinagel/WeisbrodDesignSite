@@ -12,7 +12,6 @@
     <div class="logo-img">
       <img src={company.logo} alt="Logo"/>
     </div>
-    <!-- <h1>{company.name}</h1> -->
   </a>
   <SiteSidebar bind:open={sidebarOpen}/>
   <nav class="navbar tablet-hidden">
@@ -29,14 +28,9 @@
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    background-color: var(--header-background-color);
+    background-color: transparent;
     height: 120px;
     padding: 0 16px;
-  }
-
-  h1 {
-    color: var(--header-color);
-    margin: 10px;
   }
 
   .logo {
@@ -50,23 +44,14 @@
   }
 
   .navlink {
-    color: var(--header-color);
     margin: 5px 32px;
-    font-size: 1.6em;
+    font-size: 1.4em;
     line-height: 22px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
+    letter-spacing: 0px;
+    font-weight: 500;
     text-transform: uppercase;
     transition-duration: 0.2s;
-
-    text-shadow:
-        -5px 6px 0 #000,
-        -5px 3px 0 #000,
-        -3px 6px 0 #000,
-        -2px -2px 0 #000,  
-        2px -2px 0 #000,
-        -2px 2px 0 #000,
-        2px 2px 0 #000;
+    font-family: 'century-gothic';
   }
 
   .navlink:hover {
